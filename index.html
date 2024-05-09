@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratitude List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gratitude List</h1>
+    <form id="gratitudeForm">
+        <input type="text" id="gratitudeInput" placeholder="Enter something you're grateful for...">
+        <input type="submit" value="Add">
+    </form>
+    <ul id="gratitudeList">
+        <li>Ishan BG</li>
+        <li>KrYpTiC BG</li>
+        <li>LoyalBeast</li>
+        <li>aqeel</li>
+        <li>AreenDaOne</li>
+        <li>ZeffNotOfficial</li>
+        <li>Z</li>
+        <li>ExternalBG</li>
+        <li>dawid bg</li>
+    </ul>
+
+    <script>
+        const form = document.getElementById('gratitudeForm');
+        const input = document.getElementById('gratitudeInput');
+        const list = document.getElementById('gratitudeList');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const text = input.value.trim();
+            if (text !== '') {
+                const li = document.createElement('li');
+                li.textContent = text;
+                list.appendChild(li);
+                input.value = '';
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratitude List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+</html>
